@@ -10,18 +10,30 @@ header, footer {
 
     padding: 50px;
 }
-.banner, .descripcion, .nosotros, .productos{
+.banner, .descripcion, .productos{
     width: 100%;
     height: 25%;
     border: solid 2px black;
+    display: flex;
+    justify-content: center;
 
 }
+.bimg{
+    background-color: white;
+    height: auto;
+    width: 80%;
+}
+.nosotros{
+    width: 100%;
+    height: 25%;
+    border: solid 2px black;
+}
 main{
-    background-color: rgb(233, 126, 197);
+    background-color: white;
     height: 80%;
 }
 .amarillo {
-    background-color: rgb(241, 241, 221);
+    background-color: rgba(255, 255, 255, 0.952);
 }
 
 .productos{
@@ -44,16 +56,46 @@ main{
 
     height: 100%;
     /*width: 10%;*/
-    background-color: deeppink;
+    background-color: white;
     border: solid 3px black;
     font-size: 20px;
     padding: 5px;
 }
 
+.detalleProducto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
 .foto {
-    height: 60%;
+    height: 75%;
     width: 100%;
     background-color: white;
+}
+
+.texto{
+    background-color: white;
+    height: auto;
+    width: 40%;
+    justify-content: left;
+}
+
+.imagen{
+    background-color: white;
+    height: 100%;
+    justify-content: right;
+    object-fit: cover;
+}
+
+.logo{
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    height: 10%;
+    width: 25%;
 }
 
 .staff {
@@ -64,7 +106,7 @@ main{
 
     .persona {
         width: 100%;
-        height: 30%;
+        height: 25%;
         background-color: rgb(241, 241, 221);
     }
     .foto {
